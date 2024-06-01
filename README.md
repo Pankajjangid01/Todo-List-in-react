@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# To-Do List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple To-Do List application built with React and styled using Tailwind CSS. The application allows users to add, remove, and mark tasks as completed or incomplete. It also includes filtering options and toast notifications for various actions.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add tasks with a status (completed/incomplete)
+- Remove tasks
+- Mark tasks as completed or incomplete
+- Filter tasks by status (all, completed, incomplete) using radio buttons
+- Persist tasks in localStorage
+- Toast notifications for task actions
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the repository:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/yourusername/todo-list.git
+   cd todo-list
+2. Installation Dependecies:
+   -npm install
+3. Start the application:
+   -npm start
 
-### `npm test`
+##Testing Guidance
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Adding a Task**
+1. Type a task in the input field.
+2. Select "Incomplete" or "Completed" from the dropdown.
+3. Click "Add Task".
+4. A toast notification should appear confirming the task has been added.
+5. The task should appear in the list below.
+   
+**Marking a Task as Completed/Incomplete**
+1. Click on a task in the list.
+2. The task should toggle its completion status (indicated by a line-through style if completed).
+3. A toast notification should appear indicating the change in status.
 
-### `npm run build`
+**Removing a Task**
+1. Click the "Remove" button next to a task.
+2. The task should be removed from the list.
+3. A toast notification should appear indicating the task has been removed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Filtering Tasks**
+1. Use the radio buttons to filter tasks by "All", "Completed", or "Incomplete".
+2. The task list should update to show tasks according to the selected filter.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**LocalStorage Integration**
+1. Refresh the page.
+2. The tasks should persist, reflecting their previous state.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Acknowledgements
+React
+Tailwind CSS
+React Toastify
